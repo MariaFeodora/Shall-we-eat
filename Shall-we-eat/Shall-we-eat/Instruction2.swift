@@ -17,10 +17,13 @@ struct Instruction2: View {
             .onEnded { _ in self.isDragging = false }
     }
     var body: some View {
+        ZStack {
         Text("Page 3: Instruction3")
-    }
+        }.onTapGesture (count: 1) {
+            ViewSwitcherState.shared.showNextView()
+        }
 }
-
+}
 struct Instruction2_Previews: PreviewProvider {
     static var previews: some View {
         Instruction2()
