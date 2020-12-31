@@ -17,8 +17,14 @@ struct Instruction2: View {
             .onEnded { _ in self.isDragging = false }
     }
     var body: some View {
-        ZStack {
+        ZStack{
+            Image("02")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+            VStack{
         Text("Page 3: Instruction3")
+        Text("Page 3: Instruction3")
+            }
         }.onTapGesture (count: 1) {
             ViewSwitcherState.shared.showNextView()
         }

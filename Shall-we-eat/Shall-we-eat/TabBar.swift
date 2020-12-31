@@ -12,27 +12,28 @@ struct TabBar: View {
         TabView{
             Recipes()
                 .tabItem {
-                    Image(systemName: "map.fill")
+                    Image(systemName: "magnifyingglass")
                     Text("Recipes")
         }
             Book()
                 .tabItem {
-                    Image(systemName: "map.fill")
+                    Image(systemName: "book.fill")
                     Text("Book")
         }
             List()
                 .tabItem {
-                    Image(systemName: "map.fill")
+                    //Image(systemName: "chart.bar.doc.horizontal.fill")
+                    Image(systemName: "list.bullet.rectangle")
                     Text("List")
         }
             SocialNetwork()
                 .tabItem {
-                    Image(systemName: "map.fill")
+                    Image(systemName: "person.fill")
                     Text(" Social")
         }
             Fridge()
                 .tabItem {
-                    Image(systemName: "map.fill")
+                    Image(systemName: "dot.circle.and.cursorarrow")
                     Text("Fridge")
         }
     }
