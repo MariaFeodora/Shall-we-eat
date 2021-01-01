@@ -20,7 +20,7 @@
 		39FF6EA0259D23E0007FACF0 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF6E9F259D23E0007FACF0 /* Book.swift */; };
 		39FF6EA3259D23F0007FACF0 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF6EA2259D23F0007FACF0 /* List.swift */; };
 		39FF6EA6259D2438007FACF0 /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF6EA5259D2438007FACF0 /* SocialNetwork.swift */; };
-		39FF6EA9259D2472007FACF0 /* Fridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF6EA8259D2472007FACF0 /* Fridge.swift */; };
+		39FF6EB6259E3612007FACF0 /* Fridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF6EB5259E3612007FACF0 /* Fridge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,7 @@
 		39FF6E9F259D23E0007FACF0 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		39FF6EA2259D23F0007FACF0 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		39FF6EA5259D2438007FACF0 /* SocialNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork.swift; sourceTree = "<group>"; };
-		39FF6EA8259D2472007FACF0 /* Fridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fridge.swift; sourceTree = "<group>"; };
+		39FF6EB5259E3612007FACF0 /* Fridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fridge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +82,8 @@
 				39FF6E9C259D23BD007FACF0 /* Recipes.swift */,
 				39FF6E9F259D23E0007FACF0 /* Book.swift */,
 				39FF6EA2259D23F0007FACF0 /* List.swift */,
+				39FF6EB5259E3612007FACF0 /* Fridge.swift */,
 				39FF6EA5259D2438007FACF0 /* SocialNetwork.swift */,
-				39FF6EA8259D2472007FACF0 /* Fridge.swift */,
 				22B77B21259CDC9200089546 /* Assets.xcassets */,
 				22B77B26259CDC9200089546 /* Info.plist */,
 				22B77B23259CDC9200089546 /* Preview Content */,
@@ -168,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39FF6EA9259D2472007FACF0 /* Fridge.swift in Sources */,
+				39FF6EB6259E3612007FACF0 /* Fridge.swift in Sources */,
 				39FF6E90259D0507007FACF0 /* Instruction2.swift in Sources */,
 				39FF6E94259D06E7007FACF0 /* Instruction1.swift in Sources */,
 				39FF6E8A259D04C9007FACF0 /* Instruction.swift in Sources */,

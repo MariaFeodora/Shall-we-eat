@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+
 struct SocialNetwork: View {
     var body: some View {
         Text("SocialNetwork")
     }
 }
+ 
 
 struct SocialNetwork_Previews: PreviewProvider {
     static var previews: some View {
