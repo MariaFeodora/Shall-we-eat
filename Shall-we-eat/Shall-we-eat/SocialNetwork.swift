@@ -15,27 +15,32 @@ struct SocialNetwork: View {
         Video(id: 1, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_7408", ofType: "MOV")!)), replay: false),
         Video(id: 2, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_7847", ofType: "MOV")!)), replay: false)
     ]
-
+    @State private var changeView: Bool = false
+    
     var body: some View {
+        NavigationView{
         ZStack() {
             PlayerScrollView(DataVideo: self.$DataVideo)
-        
             VStack(spacing: 25){
-                    Button(action:{
-                        
-                }) {
-                    Image("onion")
-                        .resizable()
-                        .frame(width: 70, height: 70)
-                        .clipShape(Circle())
-                        
-                }
+                Button (action:{
+                    self.changeView = true
+                            }) {
+                                }
+                        NavigationLink(
+                            destination: SocialNetwork1(),
+                            isActive: self.$changeView,
+                            label: {
+                                Image("onion")
+                                .resizable()
+                                .frame(width: 70, height: 70)
+                                .clipShape(Circle())
+                            })
                 Button(action:{
                     
             }) {
                 Image(systemName: "suit.heart.fill")
                     .font(.largeTitle)
-                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.white)
                     
                 }
                     Button(action:{
@@ -43,7 +48,7 @@ struct SocialNetwork: View {
                 }) {
                     Image(systemName: "message.fill")
                         .font(.title)
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.white)
                     }
                         
                         Button(action:{
@@ -51,16 +56,16 @@ struct SocialNetwork: View {
                     }) {
                         Image(systemName: "arrowshape.turn.up.right.fill")
                             .font(.largeTitle)
-                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(.white)
             }
             }.padding(.bottom, 50)
             .padding(.trailing)
-            .position(x: 70.0, y: 150.0)
+            .position(x: 340.0, y: 250.0)
             
         }.edgesIgnoringSafeArea(.all)
     }
 }
-
+}
 struct PlayerView: View {
     @Binding var DataVideo: [Video]
     
