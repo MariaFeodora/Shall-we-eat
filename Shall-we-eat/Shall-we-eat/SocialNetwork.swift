@@ -21,6 +21,7 @@ struct SocialNetwork: View {
         NavigationView{
         ZStack() {
             PlayerScrollView(DataVideo: self.$DataVideo)
+                .edgesIgnoringSafeArea(.all)
             VStack(spacing: 25){
                 Button (action:{
                     self.changeView = true
@@ -32,13 +33,13 @@ struct SocialNetwork: View {
                             label: {
                                 Image("onion")
                                 .resizable()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 60, height: 60)
                                 .clipShape(Circle())
                             })
                 Button(action:{
                     
             }) {
-                Image(systemName: "suit.heart.fill")
+                Image(systemName: "suit.heart")
                     .font(.largeTitle)
                     .foregroundColor(.white)
                     
@@ -46,7 +47,7 @@ struct SocialNetwork: View {
                     Button(action:{
                         
                 }) {
-                    Image(systemName: "message.fill")
+                    Image(systemName: "message")
                         .font(.title)
                         .foregroundColor(.white)
                     }
@@ -54,15 +55,22 @@ struct SocialNetwork: View {
                         Button(action:{
                             
                     }) {
-                        Image(systemName: "arrowshape.turn.up.right.fill")
+                        Image(systemName: "arrowshape.turn.up.right")
                             .font(.largeTitle)
                             .foregroundColor(.white)
             }
+                Button(action:{
+                    
+            }) {
+                Image(systemName: "newspaper")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+    }
             }.padding(.bottom, 50)
             .padding(.trailing)
-            .position(x: 340.0, y: 250.0)
+            .position(x: 360.0, y: 150.0)
             
-        }.edgesIgnoringSafeArea(.all)
+        }//.edgesIgnoringSafeArea(.all)
     }
 }
 }
