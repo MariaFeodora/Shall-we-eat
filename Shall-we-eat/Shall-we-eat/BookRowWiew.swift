@@ -10,11 +10,19 @@ import SwiftUI
 
 struct BookRowView: View {
     var body: some View {
-        VStack {
+        HStack {
             Image("Image")
                 .resizable()
                 .frame(width: 150, height: 150)
-            Text("Chicken with potatoes")
+            VStack(alignment: .leading) {
+                Text("Chicken with potatoes")
+                HStack{
+                    Text("By: ")
+                    Text("Mariia_1992").italic().foregroundColor(.blue)
+                }
+                Text("Saved 12 min ago").font(.footnote)
+            }
+            Image(systemName: "ellipsis").foregroundColor(.blue)
         }
     }
 }
