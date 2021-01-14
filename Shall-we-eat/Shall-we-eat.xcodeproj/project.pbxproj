@@ -11,18 +11,18 @@
 		223DD06725AF2CC4003FFD44 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DD06625AF2CC4003FFD44 /* Ingredient.swift */; };
 		223DD06B25AF2EA6003FFD44 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DD06A25AF2EA6003FFD44 /* BookModel.swift */; };
 		223DD07525B0A915003FFD44 /* FileForTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DD07425B0A915003FFD44 /* FileForTesting.swift */; };
+		223DD09F25B0ECD4003FFD44 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DD09E25B0ECD3003FFD44 /* BookView.swift */; };
 		22B77B1E259CDC8F00089546 /* Shall_we_eatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B77B1D259CDC8F00089546 /* Shall_we_eatApp.swift */; };
 		22B77B20259CDC8F00089546 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B77B1F259CDC8F00089546 /* ContentView.swift */; };
 		22B77B22259CDC9200089546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B77B21259CDC9200089546 /* Assets.xcassets */; };
 		22B77B25259CDC9200089546 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B77B24259CDC9200089546 /* Preview Assets.xcassets */; };
 		39401A1425AEFA7600AFF6C7 /* SocialNetwork1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39401A1325AEFA7600AFF6C7 /* SocialNetwork1.swift */; };
+		3960995A25B0C5B200BBA751 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3960995925B0C5B200BBA751 /* Account.swift */; };
 		39FF6E8A259D04C9007FACF0 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF6E89259D04C9007FACF0 /* Instruction.swift */; };
 		39FF6E90259D0507007FACF0 /* Instruction2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF6E8F259D0507007FACF0 /* Instruction2.swift */; };
 		39FF6E94259D06E7007FACF0 /* Instruction1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF6E93259D06E7007FACF0 /* Instruction1.swift */; };
 		39FF6E97259D081B007FACF0 /* MultipageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF6E96259D081B007FACF0 /* MultipageView.swift */; };
 		39FF6E9A259D21C4007FACF0 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF6E99259D21C4007FACF0 /* TabBar.swift */; };
-		39FF6E9D259D23BD007FACF0 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF6E9C259D23BD007FACF0 /* Recipes.swift */; };
-		39FF6EA0259D23E0007FACF0 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF6E9F259D23E0007FACF0 /* BookView.swift */; };
 		39FF6EA6259D2438007FACF0 /* SocialNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF6EA5259D2438007FACF0 /* SocialNetworkView.swift */; };
 		39FF6EB6259E3612007FACF0 /* Fridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF6EB5259E3612007FACF0 /* Fridge.swift */; };
 		39FF6F1825A8703D007FACF0 /* IMG_7408.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 39FF6F1525A8703C007FACF0 /* IMG_7408.MOV */; };
@@ -35,6 +35,7 @@
 		223DD06625AF2CC4003FFD44 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		223DD06A25AF2EA6003FFD44 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		223DD07425B0A915003FFD44 /* FileForTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileForTesting.swift; sourceTree = "<group>"; };
+		223DD09E25B0ECD3003FFD44 /* BookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 		22B77B1A259CDC8F00089546 /* Shall-we-eat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shall-we-eat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B77B1D259CDC8F00089546 /* Shall_we_eatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shall_we_eatApp.swift; sourceTree = "<group>"; };
 		22B77B1F259CDC8F00089546 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,13 +43,12 @@
 		22B77B24259CDC9200089546 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		22B77B26259CDC9200089546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39401A1325AEFA7600AFF6C7 /* SocialNetwork1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork1.swift; sourceTree = "<group>"; };
+		3960995925B0C5B200BBA751 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		39FF6E89259D04C9007FACF0 /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
 		39FF6E8F259D0507007FACF0 /* Instruction2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction2.swift; sourceTree = "<group>"; };
 		39FF6E93259D06E7007FACF0 /* Instruction1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction1.swift; sourceTree = "<group>"; };
 		39FF6E96259D081B007FACF0 /* MultipageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipageView.swift; sourceTree = "<group>"; };
 		39FF6E99259D21C4007FACF0 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
-		39FF6E9C259D23BD007FACF0 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
-		39FF6E9F259D23E0007FACF0 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 		39FF6EA5259D2438007FACF0 /* SocialNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkView.swift; sourceTree = "<group>"; };
 		39FF6EB5259E3612007FACF0 /* Fridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fridge.swift; sourceTree = "<group>"; };
 		39FF6F1525A8703C007FACF0 /* IMG_7408.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_7408.MOV; sourceTree = "<group>"; };
@@ -98,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				22B77B1D259CDC8F00089546 /* Shall_we_eatApp.swift */,
+				223DD09E25B0ECD3003FFD44 /* BookView.swift */,
 				22B77B1F259CDC8F00089546 /* ContentView.swift */,
 				39FF6E96259D081B007FACF0 /* MultipageView.swift */,
 				39FF6E89259D04C9007FACF0 /* Instruction.swift */,
@@ -105,8 +106,7 @@
 				39FF6E93259D06E7007FACF0 /* Instruction1.swift */,
 				39FF6E8F259D0507007FACF0 /* Instruction2.swift */,
 				39FF6E99259D21C4007FACF0 /* TabBar.swift */,
-				39FF6E9C259D23BD007FACF0 /* Recipes.swift */,
-				39FF6E9F259D23E0007FACF0 /* BookView.swift */,
+				3960995925B0C5B200BBA751 /* Account.swift */,
 				223DD06025AF1350003FFD44 /* BookRowWiew.swift */,
 				223DD07425B0A915003FFD44 /* FileForTesting.swift */,
 				39FF6EB5259E3612007FACF0 /* Fridge.swift */,
@@ -206,16 +206,16 @@
 				39FF6E90259D0507007FACF0 /* Instruction2.swift in Sources */,
 				223DD07525B0A915003FFD44 /* FileForTesting.swift in Sources */,
 				223DD06125AF1350003FFD44 /* BookRowWiew.swift in Sources */,
+				3960995A25B0C5B200BBA751 /* Account.swift in Sources */,
 				39FF6E94259D06E7007FACF0 /* Instruction1.swift in Sources */,
 				39FF6E8A259D04C9007FACF0 /* Instruction.swift in Sources */,
 				223DD06B25AF2EA6003FFD44 /* BookModel.swift in Sources */,
-				39FF6E9D259D23BD007FACF0 /* Recipes.swift in Sources */,
 				39FF6E97259D081B007FACF0 /* MultipageView.swift in Sources */,
-				39FF6EA0259D23E0007FACF0 /* BookView.swift in Sources */,
 				22B77B20259CDC8F00089546 /* ContentView.swift in Sources */,
 				39FF6EA6259D2438007FACF0 /* SocialNetworkView.swift in Sources */,
 				22B77B1E259CDC8F00089546 /* Shall_we_eatApp.swift in Sources */,
 				39FF6E9A259D21C4007FACF0 /* TabBar.swift in Sources */,
+				223DD09F25B0ECD4003FFD44 /* BookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

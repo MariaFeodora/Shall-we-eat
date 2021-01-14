@@ -10,10 +10,15 @@ import SwiftUI
 struct TabBar: View {
     var body: some View {
         TabView{
-            Recipes()
+            SocialNetworkView()
                 .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Recipes")
+                    Image(systemName: "person.2.fill")
+                    Text(" Social")
+        }
+            Account()
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Account")
         }
             BookView()
                 .tabItem {
@@ -26,11 +31,7 @@ struct TabBar: View {
                     Image(systemName: "list.bullet.rectangle")
                     Text("Ingredient")
         }
-            SocialNetworkView()
-                .tabItem {
-                    Image(systemName: "person.fill")
-                    Text(" Social")
-        }
+            
             Fridge()
                 .tabItem {
                     Image(systemName: "dot.circle.and.cursorarrow")
