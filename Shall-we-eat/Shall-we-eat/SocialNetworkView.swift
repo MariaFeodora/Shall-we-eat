@@ -9,7 +9,7 @@ import SwiftUI
 import AVKit
 
 
-struct SocialNetwork: View {
+struct SocialNetworkView: View {
     @State var DataVideo = [
         Video(id: 0, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_7363", ofType: "MOV")!)), replay: false),
         Video(id: 1, player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_7408", ofType: "MOV")!)), replay: false),
@@ -18,54 +18,53 @@ struct SocialNetwork: View {
     @State private var changeView: Bool = false
     
     var body: some View {
-        NavigationView{
         ZStack() {
             PlayerScrollView(DataVideo: self.$DataVideo)
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 25){
                 Button (action:{
                     self.changeView = true
-                            }) {
-                                }
-                        NavigationLink(
-                            destination: SocialNetwork1(),
-                            isActive: self.$changeView,
-                            label: {
-                                Image("onion")
-                                .resizable()
-                                .frame(width: 60, height: 60)
-                                .clipShape(Circle())
-                            })
+                }) {
+                }
+                NavigationLink(
+                    destination: SocialNetwork1(),
+                    isActive: self.$changeView,
+                    label: {
+                        Image("onion")
+                            .resizable()
+                            .frame(width: 60, height: 60)
+                            .clipShape(Circle())
+                    })
                 Button(action:{
                     
-            }) {
-                Image(systemName: "suit.heart")
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
+                }) {
+                    Image(systemName: "suit.heart")
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
                     
                 }
-                    Button(action:{
-                        
+                Button(action:{
+                    
                 }) {
                     Image(systemName: "message")
                         .font(.title)
                         .foregroundColor(.white)
-                    }
-                        
-                        Button(action:{
-                            
-                    }) {
-                        Image(systemName: "arrowshape.turn.up.right")
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
-            }
+                }
+                
                 Button(action:{
                     
-            }) {
-                Image(systemName: "newspaper")
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-    }
+                }) {
+                    Image(systemName: "arrowshape.turn.up.right")
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                }
+                Button(action:{
+                    
+                }) {
+                    Image(systemName: "newspaper")
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                }
             }.padding(.bottom, 50)
             .padding(.trailing)
             .position(x: 360.0, y: 150.0)
@@ -73,7 +72,7 @@ struct SocialNetwork: View {
         }//.edgesIgnoringSafeArea(.all)
     }
 }
-}
+
 struct PlayerView: View {
     @Binding var DataVideo: [Video]
     
@@ -187,6 +186,6 @@ struct PlayerScrollView: UIViewRepresentable {
 
 struct SocialNetwork_Previews: PreviewProvider {
     static var previews: some View {
-        SocialNetwork()
+        SocialNetworkView()
     }
 }

@@ -26,7 +26,7 @@ struct TabBar: View {
                     Image(systemName: "list.bullet.rectangle")
                     Text("Ingredient")
         }
-            SocialNetwork()
+            SocialNetworkView()
                 .tabItem {
                     Image(systemName: "person.fill")
                     Text(" Social")
