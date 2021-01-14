@@ -18,58 +18,60 @@ struct SocialNetworkView: View {
     @State private var changeView: Bool = false
     
     var body: some View {
-        ZStack() {
-            PlayerScrollView(DataVideo: self.$DataVideo)
-                .edgesIgnoringSafeArea(.all)
-            VStack(spacing: 25){
-                Button (action:{
-                    self.changeView = true
-                }) {
-                }
-                NavigationLink(
-                    destination: SocialNetwork1(),
-                    isActive: self.$changeView,
-                    label: {
-                        Image("onion")
-                            .resizable()
-                            .frame(width: 60, height: 60)
-                            .clipShape(Circle())
-                    })
-                Button(action:{
+        NavigationView {
+            ZStack() {
+                PlayerScrollView(DataVideo: self.$DataVideo)
+                    .edgesIgnoringSafeArea(.all)
+                VStack(spacing: 25){
+                    Button (action:{
+                        self.changeView = true
+                    }) {
+                    }
+                    NavigationLink(
+                        destination: SocialNetwork1(),
+                        isActive: self.$changeView,
+                        label: {
+                            Image("onion")
+                                .resizable()
+                                .frame(width: 60, height: 60)
+                                .clipShape(Circle())
+                        })
+                    Button(action:{
+                        
+                    }) {
+                        Image(systemName: "suit.heart")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                        
+                    }
+                    Button(action:{
+                        
+                    }) {
+                        Image(systemName: "message")
+                            .font(.title)
+                            .foregroundColor(.white)
+                    }
                     
-                }) {
-                    Image(systemName: "suit.heart")
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
-                    
-                }
-                Button(action:{
-                    
-                }) {
-                    Image(systemName: "message")
-                        .font(.title)
-                        .foregroundColor(.white)
-                }
+                    Button(action:{
+                        
+                    }) {
+                        Image(systemName: "arrowshape.turn.up.right")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                    }
+                    Button(action:{
+                        
+                    }) {
+                        Image(systemName: "newspaper")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                    }
+                }.padding(.bottom, 50)
+                .padding(.trailing)
+                .position(x: 360.0, y: 150.0)
                 
-                Button(action:{
-                    
-                }) {
-                    Image(systemName: "arrowshape.turn.up.right")
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
-                }
-                Button(action:{
-                    
-                }) {
-                    Image(systemName: "newspaper")
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
-                }
-            }.padding(.bottom, 50)
-            .padding(.trailing)
-            .position(x: 360.0, y: 150.0)
-            
-        }//.edgesIgnoringSafeArea(.all)
+            }.navigationBarHidden(true)
+        }
     }
 }
 
