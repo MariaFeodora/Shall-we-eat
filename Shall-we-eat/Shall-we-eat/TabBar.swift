@@ -18,13 +18,13 @@ struct TabBar: View {
             Book()
                 .tabItem {
                     Image(systemName: "book.fill")
-                    Text("Book")
+                    Text("Cook Book")
         }
-            List()
+            Ingredient()
                 .tabItem {
                     //Image(systemName: "chart.bar.doc.horizontal.fill")
                     Image(systemName: "list.bullet.rectangle")
-                    Text("List")
+                    Text("Ingredient")
         }
             SocialNetwork()
                 .tabItem {
