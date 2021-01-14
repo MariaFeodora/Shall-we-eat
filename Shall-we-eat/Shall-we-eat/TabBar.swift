@@ -15,7 +15,7 @@ struct TabBar: View {
                     Image(systemName: "magnifyingglass")
                     Text("Recipes")
         }
-            Book()
+            BookView()
                 .tabItem {
                     Image(systemName: "book.fill")
                     Text("Cook Book")
