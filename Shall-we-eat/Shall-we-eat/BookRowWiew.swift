@@ -18,10 +18,7 @@ struct BookRowView: View {
                 .cornerRadius(10)
             VStack(alignment: .leading) {
                 Text("Chicken with potatoes")
-                HStack{
-                    Text("By: ")
-                    Text("Mariia_1992").italic().foregroundColor(.blue)
-                }
+                
             }
             
         }

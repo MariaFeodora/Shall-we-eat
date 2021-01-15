@@ -23,14 +23,7 @@ struct BookView: View {
         NavigationView {
             ZStack {
             List {
-                Text("Adding recepies from other sources")
-                    .font(.callout)
-                    .bold()
-                HStack{
-                    TextField("Enter adress of desirable  recipy...", text: $username)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                    Image(systemName: "link.badge.plus")
-                }
+                searchView
                 Section(header: Text("Recently saved")) {
                
                         
@@ -91,7 +84,7 @@ struct BookView: View {
                                 .foregroundColor(Color.white)
                                 .padding(.bottom, 7)
                         })
-                        .background(Color.blue)
+                        .background(Color.color11)
                         .cornerRadius(38.5)
                         .padding()
                         .shadow(color: Color.black.opacity(0.3),
@@ -100,9 +93,25 @@ struct BookView: View {
                                 y: 3)
                     }
                 }
-            }.navigationTitle("Cook book")
+            }
+            .listStyle(PlainListStyle())
+            .navigationTitle("Cook book")
+            
   }
 }
+    
+    var searchView: some View {
+        VStack {
+            Text("Adding recepies from other sources")
+                .font(.callout)
+                .bold()
+            HStack{
+                TextField("Enter adress of desirable  recipy...", text: $username)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                Image(systemName: "link.badge.plus")
+            }
+        }
+    }
 }
 
 struct Book_Previews: PreviewProvider {

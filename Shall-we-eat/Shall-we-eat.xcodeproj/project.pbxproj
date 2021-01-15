@@ -98,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				22B77B1D259CDC8F00089546 /* Shall_we_eatApp.swift */,
-				223DD09E25B0ECD3003FFD44 /* BookView.swift */,
 				22B77B1F259CDC8F00089546 /* ContentView.swift */,
 				39FF6E96259D081B007FACF0 /* MultipageView.swift */,
 				39FF6E89259D04C9007FACF0 /* Instruction.swift */,
@@ -107,6 +106,7 @@
 				39FF6E8F259D0507007FACF0 /* Instruction2.swift */,
 				39FF6E99259D21C4007FACF0 /* TabBar.swift */,
 				3960995925B0C5B200BBA751 /* Account.swift */,
+				223DD09E25B0ECD3003FFD44 /* BookView.swift */,
 				223DD06025AF1350003FFD44 /* BookRowWiew.swift */,
 				223DD07425B0A915003FFD44 /* FileForTesting.swift */,
 				39FF6EB5259E3612007FACF0 /* Fridge.swift */,
