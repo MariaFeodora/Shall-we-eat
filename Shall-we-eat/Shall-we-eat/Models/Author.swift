@@ -9,15 +9,15 @@ import SwiftUI
 
 struct Author: Identifiable {
     let id = UUID()
-    var AccountFoto: String
+    var AccountPhoto: String
     var AccountName: String
    
     
     static var AllAcount = [
-        Author(AccountFoto: "onion", AccountName:"Halyna"),
-        Author(AccountFoto: "onion", AccountName:"Thomas"),
-        Author(AccountFoto: "onion", AccountName:"Vitalii"),
-        Author(AccountFoto: "onion", AccountName:"Maria"),
+        Author(AccountPhoto: "onion", AccountName:"Halyna"),
+        Author(AccountPhoto: "onion", AccountName:"Thomas"),
+        Author(AccountPhoto: "onion", AccountName:"Vitalii"),
+        Author(AccountPhoto: "onion", AccountName:"Maria"),
     ]
 }
 
