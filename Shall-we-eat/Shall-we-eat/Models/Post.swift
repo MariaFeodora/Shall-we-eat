@@ -8,7 +8,6 @@
 import SwiftUI
 import AVKit
 
-
 struct Post: Identifiable {
     
 var id = UUID()
