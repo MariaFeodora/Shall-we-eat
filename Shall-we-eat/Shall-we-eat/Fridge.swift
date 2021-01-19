@@ -19,30 +19,30 @@ struct Fridge: View {
     
     var body: some View {
         NavigationView{
-        ScrollView {
-        VStack {
-            LazyVGrid(columns: columns, spacing: 20) {
-            ForEach(Ingredients, id: \.self) {
-                Ingredients in
-                Text(Ingredients)
-                    .frame(width: 90, height: 90, alignment: .center)
-                    .background(Color.gray)
-                    .cornerRadius(30)
+            ScrollView {
+                VStack {
+                    LazyVGrid(columns: columns, spacing: 20) {
+                        ForEach(Ingredients, id: \.self) {
+                            Ingredients in
+                            Text(Ingredients)
+                                .frame(width: 90, height: 90, alignment: .center)
+                                .background(Color.gray)
+                                .cornerRadius(30)
+                        }
+                    }
+                    Text("confirm")
+                        .frame(width: 350, height: 90, alignment: .center)
+                        .background(Color.gray)
+                        .cornerRadius(30)
+                }
             }
+            .navigationBarTitle("Выбери 5 продуктов",displayMode: .inline)
+            .navigationBarItems(trailing:
+                                    HStack {
+                                        Button("Delete"){}
+                                    })
         }
-            Text("confirm")
-                .frame(width: 350, height: 90, alignment: .center)
-                .background(Color.gray)
-                .cornerRadius(30)
     }
-}
-        .navigationBarTitle("Выбери 5 продуктов",displayMode: .inline)
-        .navigationBarItems(trailing:
-                                HStack {
-                                    Button("Delete"){}
-                                })
-}
-}
 }
 struct Fridge_Previews: PreviewProvider {
     static var previews: some View {

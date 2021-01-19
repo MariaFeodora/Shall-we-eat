@@ -84,7 +84,7 @@ struct BookView: View {
                                 .foregroundColor(Color.white)
                                 .padding(.bottom, 7)
                         })
-                        .background(Color.color11)
+                        .background(Color.gray)
                         .cornerRadius(38.5)
                         .padding()
                         .shadow(color: Color.black.opacity(0.3),

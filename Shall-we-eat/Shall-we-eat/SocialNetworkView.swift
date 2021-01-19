@@ -92,7 +92,7 @@ struct PlayerView: View {
             self.DataVideo[0].player.play()
         }
     }
-   
+    
 }
 
 struct Player: UIViewControllerRepresentable {
@@ -111,10 +111,10 @@ struct Player: UIViewControllerRepresentable {
     }
 }
 /*class Host:UIHostingController <SocialNetwork>{
-    override var Status: UIStatusBarStyle{
-        return .lightContent
-    }
-}*/
+ override var Status: UIStatusBarStyle{
+ return .lightContent
+ }
+ }*/
 
 struct Video: Identifiable {
     
@@ -150,7 +150,7 @@ struct PlayerScrollView: UIViewRepresentable {
         return view
     }
     func updateUIView(_ uiView: UIScrollView, context: Context) {
-       
+        
         uiView.contentSize = CGSize(width:UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * CGFloat((DataVideo.count)))
         
         for i in 0..<uiView.subviews.count{
