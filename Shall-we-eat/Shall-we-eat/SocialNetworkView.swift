@@ -10,26 +10,13 @@ import AVKit
 
 
 struct SocialNetworkView: View {
-    @State var DataVideo = [
-        Post(author: Author.AllAcount[0], FhotoAuthor: Author.AllAcount[0], player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_7408", ofType: "MOV")!)), replay: false),
-        Post(author: Author.AllAcount[0], FhotoAuthor: Author.AllAcount[0], player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_IMG_7187", ofType: "MOV")!)), replay: false),
-        Post(author: Author.AllAcount[0], FhotoAuthor: Author.AllAcount[0], player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_7487", ofType: "MOV")!)), replay: false),
-        Post(author: Author.AllAcount[0], FhotoAuthor: Author.AllAcount[0], player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_7487", ofType: "MOV")!)), replay: false),
-        
-        Post(author: Author.AllAcount[1], FhotoAuthor: Author.AllAcount[1], player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_3903", ofType: "MOV")!)), replay: false),
-        Post(author: Author.AllAcount[1], FhotoAuthor: Author.AllAcount[1], player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_4209", ofType: "MOV")!)), replay: false),
-        
-        Post(author: Author.AllAcount[2], FhotoAuthor: Author.AllAcount[2], player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_4188", ofType: "MOV")!)), replay: false),
-        Post(author: Author.AllAcount[2], FhotoAuthor: Author.AllAcount[2], player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_7363", ofType: "MOV")!)), replay: false),
-     
-        Post(author: Author.AllAcount[3], FhotoAuthor: Author.AllAcount[3], player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_3904", ofType: "MOV")!)), replay: false),
-    ]
     @State private var changeView: Bool = false
+    @State private var videos = Post.DataVideo
     
     var body: some View {
         NavigationView {
             ZStack() {
-                PlayerScrollView(DataVideo: self.$DataVideo)
+                PlayerScrollView(DataVideo: $videos)
                     .edgesIgnoringSafeArea(.all)
                 VStack(spacing: 25){
                     Button (action:{
