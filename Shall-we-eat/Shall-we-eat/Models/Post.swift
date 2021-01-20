@@ -28,6 +28,6 @@ struct Post: Identifiable {
         Post(author: Author.AllAcount[2], PhotoAuthor: Author.AllAcount[2], player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_4188", ofType: "MOV")!)), replay: false),
         Post(author: Author.AllAcount[2], PhotoAuthor: Author.AllAcount[2], player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_7363", ofType: "MOV")!)), replay: false),
         
-        Post(author: Author.AllAcount[3], PhotoAuthor: Author.AllAcount[3], player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_3904", ofType: "MOV")!)), replay: false),
+        Post(author: Author.AllAcount[3], PhotoAuthor: Author.AllAcount[3], player: AVPlayer (url: URL(fileURLWithPath: Bundle.main.path(forResource: "IMG_3904", ofType: "MOV")!)), replay: false)
     ]
 }

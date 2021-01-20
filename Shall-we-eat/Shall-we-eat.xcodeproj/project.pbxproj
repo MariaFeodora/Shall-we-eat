@@ -91,6 +91,7 @@
 				223DD06A25AF2EA6003FFD44 /* BookModel.swift */,
 				39D9EF5F25B72A8F0069A17B /* Post.swift */,
 				39D9EF6225B72ABA0069A17B /* Author.swift */,
+				39401A1325AEFA7600AFF6C7 /* SocialNetwork1.swift */,
 				39C6DFD425B77C3E00634F0A /* VideoPlayerView.swift */,
 			);
 			path = Models;
@@ -139,7 +140,6 @@
 				39FF6EB5259E3612007FACF0 /* Fridge.swift */,
 				39FF6EA5259D2438007FACF0 /* SocialNetworkView.swift */,
 				223DD06325AF1700003FFD44 /* Models */,
-				39401A1325AEFA7600AFF6C7 /* SocialNetwork1.swift */,
 				22B77B21259CDC9200089546 /* Assets.xcassets */,
 				22B77B26259CDC9200089546 /* Info.plist */,
 				22B77B23259CDC9200089546 /* Preview Content */,

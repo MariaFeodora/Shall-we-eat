@@ -18,7 +18,7 @@ struct Account:View {
             VStack {
                 HStack{
                     VStack {
-                Image("onion")
+                        Image(Author.AllAcount[0].AccountPhoto)
                     .resizable()
                     .frame(width: 60, height: 60)
                     .clipShape(Circle())
