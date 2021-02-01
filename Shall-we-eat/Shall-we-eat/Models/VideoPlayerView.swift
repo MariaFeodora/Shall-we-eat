@@ -10,13 +10,13 @@ import AVKit
 
 struct VideoPlayerView: UIViewControllerRepresentable {
     
-    var player: AVPlayer
+    var videoURL: URL
     
     func makeUIViewController(context: Context) -> AVPlayerViewController{
         
         let controller = AVPlayerViewController()
-        controller .player = player
-        controller .videoGravity = .resizeAspectFill
+        controller.player = AVPlayer(url: videoURL)
+        controller.videoGravity = .resizeAspectFill
         return controller
     }
     func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {

@@ -38,7 +38,7 @@ struct Account:View {
                 }
             LazyVGrid(columns: columns, content: {
                 ForEach(Accountvideo){video in
-                    VideoPlayerView (player: video.player)
+                    VideoPlayerView(videoURL: video.video)
                         .cornerRadius(15)
                         .frame(height: 300)
                 }

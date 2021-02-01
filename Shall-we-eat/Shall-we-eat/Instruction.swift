@@ -18,6 +18,9 @@ struct Instruction: View {
             .font(.largeTitle)
             .foregroundColor(.white)
         } .edgesIgnoringSafeArea(.all)
+        .onTapGesture (count: 1) {
+            ViewSwitcherState.shared.showNextView()
+        }
 }
 }
 struct Instruction_Previews: PreviewProvider {

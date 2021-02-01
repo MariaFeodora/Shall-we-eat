@@ -77,24 +77,28 @@ struct PlayerView: View {
     
     var body: some View {
         VStack (spacing: 0){
-            
             ForEach(self.DataVideo){i in
-                Player(player: i.player)
+                Player(videoURL: i.video)
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)//full screensize
                     .offset(y: -5)
                 
             }
         }
         .onAppear{
-            self.DataVideo[0].player.play()
+            
         }
     }
     
 }
 
 struct Player: UIViewControllerRepresentable {
+    let videoURL: URL
+    let player: AVPlayer
     
-    var player: AVPlayer
+    init(videoURL: URL) {
+        self.videoURL = videoURL
+        self.player = AVPlayer(url: videoURL)
+    }
     
     func makeUIViewController(context: Context) -> AVPlayerViewController{
         
@@ -104,6 +108,7 @@ struct Player: UIViewControllerRepresentable {
         view.videoGravity = .resizeAspectFill
         return view
     }
+    
     func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
     }
 }
@@ -115,7 +120,6 @@ struct PlayerScrollView: UIViewRepresentable {
     @Binding var DataVideo: [Post]
     
     func makeUIView(context: Context) -> UIScrollView {
-        
         let view = UIScrollView()
         let childView = UIHostingController(rootView: PlayerView(DataVideo: self.$DataVideo))
         
@@ -154,6 +158,7 @@ struct PlayerScrollView: UIViewRepresentable {
             
             let currnerindex = Int(scrollView.contentOffset.y / UIScreen.main.bounds.height)
             
+            /*
             if index != currnerindex{
                 index = currnerindex
                 for i in 0..<parent.DataVideo.count{
@@ -164,6 +169,7 @@ struct PlayerScrollView: UIViewRepresentable {
                 }
                 parent.DataVideo[index].player.play() //play next video
             }
+             */
         }
     }
 }
