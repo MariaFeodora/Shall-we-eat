@@ -12,6 +12,7 @@
 		223DD06B25AF2EA6003FFD44 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DD06A25AF2EA6003FFD44 /* BookModel.swift */; };
 		223DD07525B0A915003FFD44 /* FileForTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DD07425B0A915003FFD44 /* FileForTesting.swift */; };
 		223DD09F25B0ECD4003FFD44 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DD09E25B0ECD3003FFD44 /* BookView.swift */; };
+		22696C5625B879E0001F576B /* AddingRecipyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22696C5525B879E0001F576B /* AddingRecipyView.swift */; };
 		22B77B1E259CDC8F00089546 /* Shall_we_eatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B77B1D259CDC8F00089546 /* Shall_we_eatApp.swift */; };
 		22B77B20259CDC8F00089546 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B77B1F259CDC8F00089546 /* ContentView.swift */; };
 		22B77B22259CDC9200089546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B77B21259CDC9200089546 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		223DD06A25AF2EA6003FFD44 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		223DD07425B0A915003FFD44 /* FileForTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileForTesting.swift; sourceTree = "<group>"; };
 		223DD09E25B0ECD3003FFD44 /* BookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		22696C5525B879E0001F576B /* AddingRecipyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingRecipyView.swift; sourceTree = "<group>"; };
 		22B77B1A259CDC8F00089546 /* Shall-we-eat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shall-we-eat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B77B1D259CDC8F00089546 /* Shall_we_eatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shall_we_eatApp.swift; sourceTree = "<group>"; };
 		22B77B1F259CDC8F00089546 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				39FF6E99259D21C4007FACF0 /* TabBar.swift */,
 				3960995925B0C5B200BBA751 /* Account.swift */,
 				223DD09E25B0ECD3003FFD44 /* BookView.swift */,
+				22696C5525B879E0001F576B /* AddingRecipyView.swift */,
 				223DD06025AF1350003FFD44 /* BookRowWiew.swift */,
 				223DD07425B0A915003FFD44 /* FileForTesting.swift */,
 				39FF6EB5259E3612007FACF0 /* Fridge.swift */,
@@ -244,6 +247,7 @@
 				39FF6E94259D06E7007FACF0 /* Instruction1.swift in Sources */,
 				39FF6E8A259D04C9007FACF0 /* Instruction.swift in Sources */,
 				223DD06B25AF2EA6003FFD44 /* BookModel.swift in Sources */,
+				22696C5625B879E0001F576B /* AddingRecipyView.swift in Sources */,
 				39FF6E97259D081B007FACF0 /* MultipageView.swift in Sources */,
 				39D9EF6325B72ABA0069A17B /* Author.swift in Sources */,
 				22B77B20259CDC8F00089546 /* ContentView.swift in Sources */,

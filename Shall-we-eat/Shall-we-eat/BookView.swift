@@ -22,56 +22,54 @@ struct BookView: View {
     var body: some View {
         NavigationView {
             ZStack {
-            List {
-                searchView
-                Section(header: Text("Recently saved")) {
-               
-                        
-                }
-                HStack {
-                    ScrollView {
-                        LazyVGrid(
-                            columns: columns,
-                            alignment: .center,
-                            spacing: 16,
-                            pinnedViews: [.sectionHeaders, .sectionFooters]
-                        ) {
-                            Section {
-                                ForEach(0...1, id: \.self) { index in
-                                    BookRowView()
+                List {
+                    searchView
+                    Section(header: Text("Recently saved")
+                                .bold()
+                                .foregroundColor(Color("Color8"))) {
+                    }
+                    HStack {
+                        ScrollView {
+                            LazyVGrid(
+                                columns: columns,
+                                alignment: .center,
+                                spacing: 16,
+                                pinnedViews: [.sectionHeaders, .sectionFooters]
+                            ) {
+                                Section {
+                                    ForEach(0...1, id: \.self) { index in
+                                        BookRowView()
+                                    }
                                 }
                             }
                         }
-                    }
-                
-                }
-               
-                
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        print("See more")
-                    }) {
                         
-                            Text("See more")
-                                    .fontWeight(.semibold)
-                                    .font(.title)
-                                .foregroundColor(.white)
-                                .padding(6)
-                                .background(Color.blue)
-                                .cornerRadius(8)
                     }
-                    Spacer()
-                }
-                VStack {
-                    Picker(selection: $favoriteColor, label: Text("What is your favorite color?")) {
-                        ForEach(0..<slides.count) { index in
-                            Text(self.slides[index]).tag(index)
+                    
+                    
+                    HStack {
+                        Spacer()
+                        Button(action: {
+                            print("See more")
+                        }) {
+                            Text("See more")
+                                .fontWeight(.semibold)
+                                .font(.title2)
+                                .foregroundColor(Color("Color8"))
+                                .padding(6)
+                                .cornerRadius(8)
                         }
-                    }.pickerStyle(SegmentedPickerStyle())
+                        Spacer()
+                    }
+                    VStack {
+                        Picker(selection: $favoriteColor, label: Text("What is your favorite color?")) {
+                            ForEach(0..<slides.count) { index in
+                                Text(self.slides[index]).tag(index)
+                            }
+                        }.pickerStyle(SegmentedPickerStyle())
+                    }
+                    
                 }
-                
-            }
                 VStack {
                     Spacer()
                     HStack {
@@ -97,8 +95,8 @@ struct BookView: View {
             .listStyle(PlainListStyle())
             .navigationTitle("Cook book")
             
-  }
-}
+        }
+    }
     
     var searchView: some View {
         VStack {

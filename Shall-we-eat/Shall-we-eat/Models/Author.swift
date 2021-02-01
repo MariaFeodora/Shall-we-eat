@@ -11,7 +11,6 @@ struct Author: Identifiable {
     let id = UUID()
     var AccountPhoto: String
     var AccountName: String
-   
     
     static var AllAcount = [
         Author(AccountPhoto: "onion", AccountName:"Halyna"),
